@@ -1,0 +1,790 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+  body {
+    background-color: #FAFAFA;
+  }
+
+  #container-one {
+    position: absolute;
+    left: 50%;
+    margin-left: -187.5px;
+    height: 157vh;
+    background-color: white;
+  }
+
+  /* #section-one {
+    height: 100vh;
+    width: 375px;
+    background-color: white;
+  } */
+
+  #section-two {
+    height: 60vh;
+    width: 375px;
+    margin-bottom: 0px;
+    background-color: white;
+  }
+
+  #profile-top {
+    background-color: white;
+  }
+
+  #profile-bottom {
+    background-color: white;
+    position: relative;
+    top: 0px;
+  }
+
+
+  .email {
+    background-color: white;
+    height: 13px;
+    position: relative;
+    top: 10px;
+    left: 15px;
+    color: orange;
+  }
+
+  .email:hover {
+    color: red;
+  }
+
+  /* SOCIAL MEDIA  https://fontawesome.com/icons/linkedin-in?style=brands */ 
+
+#social-icons {
+  position: relative;
+  top: 14px;
+  left: 16px;
+  background-color: white;
+  width: 115px;
+}
+
+.fa-envelope {
+  margin-right: 10px;
+  background-color: white;
+  color: #999999;
+  position: relative;
+  top: 1px;
+}
+
+.fa-linkedin-in {
+  margin-right: 10px;
+  background-color: white;
+  color: #999999;
+}
+
+.fa-github {
+  margin-right: 10px;
+  background-color: white;
+  color: #999999;
+}
+
+.fa-twitter {
+  margin-right: 10px;
+  background-color: white;
+  color: #999999;
+}
+
+#profile-mid {
+  position: relative;
+  top: 40px;
+}
+
+
+.fa-envelope:hover {
+  margin-right: 10px;
+  background-color: white;
+  color: #000000;
+}
+
+.fa-linkedin-in:hover {
+  margin-right: 10px;
+  background-color: white;
+  color: #0077B5;
+}
+
+.fa-github:hover {
+  margin-right: 10px;
+  background-color: white;
+  color: black;
+}
+
+.fa-twitter:hover {
+  margin-right: 10px;
+  background-color: white;
+  color: #55ADEE;
+}
+
+#square {
+  z-index: 2;
+  position: relative;
+  left: 18px;
+  height: 106px;
+  background-color: white;
+  
+}
+
+.bottom-left {
+  position: relative;
+  top: -222px;
+}
+
+
+
+.fomo {
+  float: right;
+}
+
+.panel {
+  position: relative;
+  width: 109px;
+  bottom: 231px;
+  left: 15px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  background-color: white;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  border-radius: 8px;
+}
+
+.red {
+  background-color: #D30C0C;
+}
+
+.pink {
+  background-color: #BB3954;
+}
+
+.blue {
+  /* background-color: #8A9CC2; */
+  background-color: #859CCE;
+}
+
+.orange {
+  background-color: #FBC1A6;
+}
+
+.turquoise {
+  background-color: #8CBFBC;
+}
+
+.black {
+  background-color: #B6B6B6;
+}
+
+.panel:hover .overlay {
+  opacity: 0.75;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  
+}
+
+#wrap-wrap {
+  position: relative;
+  top: 0px;
+}
+
+.middle {
+  float: right;
+  position: relative;
+  left: -132.5px;
+  bottom: 341px;
+}
+
+.right {
+  float: right;
+  position: relative;
+  left: 94px;
+  bottom: 341px;
+}
+
+.Yellow-Text {
+  display: none;
+  color: white;
+}
+
+.bottom-middle {
+  float: right;
+  position: relative;
+  left: 85px;
+  bottom: 331px;
+}
+
+.bottom-right {
+  float: right;
+  position: relative;
+  left: -15px;
+  bottom: 440px;
+}
+
+#portfolio-space {
+  position: relative;
+  top: 228px;
+}
+
+.btn-danger {
+  position: relative;
+  left: 256px;
+  bottom: 100px;
+  width: 106px;
+  height: 40px;
+  border-radius: 6px;
+  background-color:#FD5069;
+  border-color: #FD5069;
+}
+
+span {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
+}
+
+#like-panel {
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  width:375px;
+  left: 50%;
+  margin-left: -187.5px;
+  z-index: 3;
+  /* opacity: 0.5; */
+  mix-blend-mode: hard-light;
+}
+
+
+
+
+
+#dislike {
+  position: absolute;
+  left: 18%;
+  bottom: 11px;
+  -webkit-filter: drop-shadow(5px 5px 5px rgb(255, 255, 255));
+  filter: drop-shadow(5px 5px 5px rgb(255, 255, 255));
+} 
+
+/* #super-like {
+  position: absolute;;
+  left: 35.5%;
+}  */
+
+#like {
+  position: absolute;;
+  left: 56%;
+  bottom: 11px;
+  -webkit-filter: drop-shadow(5px 5px 5px rgb(255, 255, 255));
+  filter: drop-shadow(5px 5px 5px rgb(255, 255, 255));
+  /* -webkit-filter: drop-shadow(12px 12px 25px rgba(255, 255, 255, 0.5));
+  filter: url(#drop-shadow);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+  filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')"; */
+}   
+
+#super {
+  position: absolute;
+  left: 38%;
+  bottom: 16px;
+  -webkit-filter: drop-shadow(10px 10px 10px rgb(255, 255, 255));
+  filter: drop-shadow(20px 20px 20px rgb(255, 255, 255));
+}
+
+
+
+
+
+#likes-options {
+  position: fixed;
+  bottom: 0px;
+  z-index: 4;
+  width: 375px;
+  height: 93px;
+  background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 45%, rgba(255,255,255,1) 71%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 30%,rgba(255,255,255,1) 45%,rgba(255,255,255,1) 71%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 30%,rgba(255,255,255,1) 45%,rgba(255,255,255,1) 71%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+
+
+
+
+.referme {
+  position: relative;
+  bottom: 200px;
+}
+
+#portfolio-description {
+  position: relative;
+  top: 42px;
+}
+
+#resume {
+  width: 106px;
+  height: 40px;
+  border-radius: 6px;
+  background-color: #FD5069;
+  z-index: 3;
+  position: relative;
+  bottom: 210px;
+  left: 254px;
+}
+
+p {
+  position: relative;
+  bottom: 98px;
+  left: 26px;
+  color: white;
+}
+
+.resume {
+  position: relative;
+  bottom: 102px;
+  height: 13px;
+  left: 21px;
+}
+
+
+/* #resume:hover {
+  background-color: #C84558;
+  color: #F2F2F2;
+}  */
+
+.refer-clay-plz {
+  position: relative;
+  right: 254px;
+  bottom: 63px;
+}
+
+/* MODAL CSS */
+
+.modal-content {
+  width: 69%;
+  margin: 0 auto;
+  height: 226px;
+  top: 200px;
+  border-radius: 11px;
+}
+
+.modal-footer>:not(:first-child) {
+  margin-left: 7.25rem;
+}
+
+.modal-footer>:not(:last-child) {
+  position: relative;
+  top: -55px;
+  margin-right: 3.5rem;
+}
+
+.btn-secondary {
+  background-color: white;
+  border-color: white;
+}
+
+
+.btn-secondary:hover {
+  background-color: white;
+  border-color: white;
+}
+
+.btn-secondary:active {
+  background-color: white;
+  border-color: white;
+}
+
+.btn-secondary:focus {
+  background-color: white;
+  border-color: white;
+}
+
+.modal-title {
+  position: relative;
+  left: 34%;
+}
+
+.btn-primary {
+  background-color: white;
+  border-color: white;
+  color: #000000;
+  font-weight: 400;
+}
+
+.btn-primary:hover {
+  color: #000000;
+  background-color: white;
+  border-color: white;
+}
+
+.modal-header {
+  border-bottom-color: white;
+}
+
+.RC-description {
+  position: relative;
+  left: -17px;
+  bottom: 18px;
+}
+
+.modal-footer {
+  position: relative;
+  bottom: 27px;
+  border-top: none;
+}
+
+.cancel-button {
+  background-color: white; 
+  border-color: white; 
+}
+
+.visit-button {
+  background-color: white; 
+  border-color: white; 
+  position: relative;
+  left: -50px;
+  bottom: 55.5px;
+}
+
+.FOMO-description {
+  position: relative;
+  left: -17px;
+  bottom: 18px;
+}
+
+.PHLY-description {
+  position: relative;
+  left: -17px;
+  bottom: 18px;
+}
+
+.STEM-description {
+  position: relative;
+  left: -17px;
+  bottom: 18px;
+}
+
+.TRAVEL-description {
+  position: relative;
+  left: -17px;
+  bottom: 18px;
+}
+
+.TUNEZ-description {
+  position: relative;
+  left: -17px;
+  bottom: 18px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+#arrow-down-btn {
+  position: relative;
+  top: -837px;
+  left: 310px;
+}
+
+#OK {
+  position: relative;
+  top: -55px;
+  left: -48px;
+}
+
+.fade.in {
+  opacity: 1;
+}
+.modal.in .modal-dialog {
+  -webkit-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+.modal-backdrop.in {
+  opacity: 0.5;
+}
+
+
+#profile-top {
+  width: 375px;
+}
+
+#portfolio-description {
+  width: 375px;
+}
+
+/* #panel-height {
+  height: 30px;
+} */
+
+
+/*-----------------------------------------------------------------------------------*/
+/*  responsive
+/*-----------------------------------------------------------------------------------*/
+
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) { 
+
+      #profile-top {
+        width: 1495px;
+        position: relative;
+        right: 0px;
+      }
+
+      #arrow-down-btn {
+        height: 190px;
+        position: relative;
+        left: 1225px;
+        top: -3339px;
+      }
+
+      #container-one {
+        width: 1498px;
+        position: relative;
+        left: 188px;
+        background-color: white;
+        height: 243vh;
+      }
+
+      #social-icons {
+        font-size: 60px;
+        width: 480px;
+        position: relative;
+        top: 50px;
+        left: 68px;
+      }
+
+      #portfolio-description, .panel, #resume {
+        position: relative;
+        top: 170px;
+      }
+
+      .fa-envelope, .fa-linkedin-in, .fa-github, .fa-twitter {
+        margin-right: 47px;
+      }
+
+      #portfolio-description {
+        width: 1495px;
+      }
+
+      .panel {
+        position: relative;
+        top: -910px;
+        height: 434px;
+        width: 434px;
+        left: 60px;
+      }
+    
+      .middle {
+        position: relative;
+        top: -1344px;
+        left: -530px;
+      }
+
+      .right {
+        position: relative;
+        top: -1344px;
+        left: 377px;
+      }
+
+
+      .bottom-left {
+        position: relative;
+        top: -866px;
+      }
+
+      .bottom-middle {
+        position: relative;
+        top: -1300px;
+        left: -530px;
+      }
+
+      .bottom-right {
+        position: relative;
+        top: -1300px;
+        left: 377px; 
+      }
+
+      .refer-clay-plz {
+        width: 1498px;
+        position: relative;
+        left: -1032px;
+        top: 245px;
+      }
+
+      #resume {
+        width: 410px;
+        height: 166px;
+        position: relative;
+        top: -815px;
+        left: 1031px;
+        border-radius: 25px;
+      }
+
+      #super, #dislike, #like {
+        height: 420px;
+      }
+
+      #likes-options {
+        width: 1496px;
+        top: 2876px;
+        height: 375px;
+      }
+
+      #super {
+        left: 555px;
+        height: 380px;
+        position: relative;
+        left: 561px;
+        z-index: 1;
+        top: -83px;
+      }
+
+      #dislike {
+        position: relative;
+        left: -143px;
+        top: -79px;
+      }
+
+      #like {
+        position: relative;
+        left: 36px;
+        top: -79px;
+      }
+
+      .resume {
+        height: 53px;
+        position: relative;
+        top: 58px;
+        left: 78px;
+      }
+
+      .overlay {
+        border-radius: 30px;
+      }
+
+      .redcup-overlay-img {
+        height: 110px;
+      }
+
+      .fomo-overlay-img {
+        height: 70px;
+      }
+
+      .PHLY-overlay-img {
+        height: 70px;
+      }
+
+      .STEM-overlay-img {
+        height: 70px;
+      }
+
+      .TRAVEL-overlay-img {
+        height: 66px;
+      }
+
+      .TUNEZ-overlay-img {
+        height: 66px;
+      }
+
+      .modal-content {
+        width: 1380px;
+        height: 900px;
+        position: relative;
+        right: 88%;
+        top: 878px;
+        border-radius: 45px;
+      }
+
+      .RC-description {
+        height: 774px;
+        position: relative;
+        top: 61px;
+      }
+
+      .visit-modal-btn {
+        height: 49px;
+        position: relative;
+        right: 214px;
+        bottom: 17px;
+      } 
+
+      .cancel-modal-btn {
+        height: 49px;
+        position: relative;
+        right: 580px;
+        bottom: 17px;
+      }
+
+      .FOMO-description {
+        height: 774px;
+        position: relative;
+        top: 61px;
+      }
+
+      .PHLY-description {
+        height: 774px;
+        position: relative;
+        top: 61px;
+      }
+
+      .STEM-description {
+        height: 774px;
+        position: relative;
+        top: 61px;
+      }
+
+      .TRAVEL-description {
+        height: 774px;
+        position: relative;
+        top: 61px;
+      }
+
+      .TUNEZ-description {
+        height: 774px;
+        position: relative;
+        top: 61px;
+      }
+    }
+
+  
+
+
+
+
+
